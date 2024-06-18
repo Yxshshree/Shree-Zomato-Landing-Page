@@ -38,6 +38,47 @@
     display: none;
 }
 
+.setup_setion_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: calc(60vh - 65px);
+}
+.setup_setion_logo{
+    width: 200px;
+    height: auto;
+}
+.setup_setion_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 150;
+}
+.setup_setion_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+.input_container_location, 
+.input_container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.input_container_location{
+    border-right: 2px solid gainsboro;
+    width: 35%;
+}
+.input_container_search{
+    width: 65%;
+}
+
 @media only screen and (max-width: 600px){
     .navbar_menu_container .user_icon{
         display: flex;
@@ -47,5 +88,21 @@
     }
     .setup_setion{
         min-height: 80vh;       
+    }
+    .setup_setion_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        height: calc(80vh - 40px);
+    }
+    .input_container_location,
+    .input_container_search{
+        width: 98%;
+        padding: 18px;
+        border-radius: 10px;
+    }
+    .setup_setion_title{
+        font-size: 18px;
+        width: 95%;
     }
 }
